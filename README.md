@@ -1,8 +1,3 @@
----
-
-### 📁 `README-TS.md` – Proyecto en **React con TypeScript**
-
-```markdown
 # 🛒 Carrito de Compras en React (TypeScript)
 
 Este proyecto es una aplicación de carrito de compras hecha en **React con TypeScript**, aplicando buenas prácticas de tipado, componentes reutilizables y separación de lógica. Utiliza **localStorage** para persistencia, y está estilizado con **Bootstrap**, **Font Awesome** y **Google Fonts**.
@@ -29,22 +24,20 @@ Este proyecto es una aplicación de carrito de compras hecha en **React con Type
 
 ---
 
+`````markdown
 ## 📁 Estructura del proyecto
 
+````bash
 /src
-├── types/
-│ └── Product.ts
-├── components/
-│ ├── ProductCard.tsx
-│ ├── Cart.tsx
-├── data/
-│ └── products.ts
-├── App.tsx
-└── main.tsx
-
-yaml
-Copiar
-Editar
+  ├── components/
+  │   ├── ProductCard.tsx
+  │   ├── Cart.tsx
+  ├── data/
+  │   └── db.ts
+  ├── hooks/
+  │   └── useCart.ts
+  ├── App.tsx
+  └── main.tsx
 
 ---
 
@@ -66,7 +59,8 @@ Editar
    git clone https://github.com/tu-usuario/carrito-react-ts.git
    cd carrito-react-ts
    Instalá dependencias:
-   ```
+````
+`````
 
 npm install
 Iniciá el servidor:
@@ -76,3 +70,7 @@ npm run dev
 Agregar capturas de pantalla aquí
 
 📄
+
+```
+
+```
