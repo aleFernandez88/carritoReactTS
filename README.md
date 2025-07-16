@@ -1,69 +1,78 @@
-# React + TypeScript + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 📁 `README-TS.md` – Proyecto en **React con TypeScript**
 
-Currently, two official plugins are available:
+```markdown
+# 🛒 Carrito de Compras en React (TypeScript)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto es una aplicación de carrito de compras hecha en **React con TypeScript**, aplicando buenas prácticas de tipado, componentes reutilizables y separación de lógica. Utiliza **localStorage** para persistencia, y está estilizado con **Bootstrap**, **Font Awesome** y **Google Fonts**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologías utilizadas
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚛️ React + TypeScript
+- 💾 LocalStorage
+- 🎨 Bootstrap 5
+- 🌐 Font Awesome
+- ✍️ Google Fonts
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- ✅ Catálogo de productos
+- ➕ Agregado de productos al carrito
+- ➖ Eliminación de productos del carrito
+- 💾 Persistencia automática con LocalStorage
+- 💡 Tipado estricto y código seguro con TS
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📁 Estructura del proyecto
+
+/src
+├── types/
+│ └── Product.ts
+├── components/
+│ ├── ProductCard.tsx
+│ ├── Cart.tsx
+├── data/
+│ └── products.ts
+├── App.tsx
+└── main.tsx
+
+yaml
+Copiar
+Editar
+
+---
+
+## 🧑‍💻 Buenas prácticas aplicadas
+
+- Tipado estricto con interfaces y types
+- Separación de lógica y componentes
+- Manejo de estado con `useState` / `useEffect`
+- Validación de props mediante tipos
+- Uso de `localStorage` con sincronización segura
+- Componentes funcionales puros y reutilizables
+
+---
+
+## ▶️ Instalación y ejecución
+
+1. Cloná el repo:
+   ```bash
+   git clone https://github.com/tu-usuario/carrito-react-ts.git
+   cd carrito-react-ts
+   Instalá dependencias:
+   ```
+
+npm install
+Iniciá el servidor:
+
+npm run dev
+📸 Capturas
+Agregar capturas de pantalla aquí
+
+📄
